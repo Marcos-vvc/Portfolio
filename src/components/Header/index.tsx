@@ -4,24 +4,28 @@ import { HeaderContainer } from './styles'
 
 export function Header() {
   return (
-    <motion.div
-      initial={{ top: -100 }}
-      animate={{ top: 0 }}
-      transition={{ duration: 0.5 }}
-    >
-      <div className="container">
+    <div className="container">
+      <motion.div
+        initial={{ opacity: 0, x: -200 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        exit={{ opacity: 0, x: -200 }}
+        transition={{ duration: 0.9 }}
+        // initial={{ top: -100 }}
+        // animate={{ top: 0 }}
+        // transition={{ duration: 0.5 }}
+      >
         <HeaderContainer>
           <img src={minhaLogo} alt="eu" />
 
           <header>
             <span>Home</span>
-            <span>About</span>
-            <span>Skills</span>
-            <span>Projects</span>
-            <span>Contact</span>
+            <span>Sobre</span>
+            <span>Habilidades</span>
+            <span>Projetos</span>
+            <span>Contato</span>
           </header>
         </HeaderContainer>
-      </div>
-    </motion.div>
+      </motion.div>
+    </div>
   )
 }

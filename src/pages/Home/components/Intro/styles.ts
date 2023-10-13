@@ -6,7 +6,7 @@ export const IntroContainer = styled.div`
   align-items: center;
   width: 100%;
   margin-top: -3rem;
-  height: 100vh;
+  height: 60rem;
 `
 
 export const MyContent = styled.div`
@@ -14,7 +14,7 @@ export const MyContent = styled.div`
   flex-direction: column;
   width: 41.625rem;
 
-  section {
+  .section {
     display: flex;
     align-items: center;
     margin-top: 60px;

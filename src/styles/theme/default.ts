@@ -5,4 +5,5 @@ export const defaultTheme = {
   'text-number': '#4F4F4F',
   'text-color': '#828282',
   'blue-normal': '#3294F8',
+  'light-content': '#A7A7A7',
 }

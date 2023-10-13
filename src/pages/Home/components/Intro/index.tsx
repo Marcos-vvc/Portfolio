@@ -6,10 +6,10 @@ import {
   SubTitle,
   Title,
 } from './styles'
-import iPhoto from '../../assets/Eu.png'
-import node from '../../assets/nodejs.svg'
-import react from '../../assets/react.svg'
-import typescript from '../../assets/typescript.svg'
+import iPhoto from '../../../../assets/Eu.png'
+import node from '../../../../assets/nodejs.svg'
+import react from '../../../../assets/react.svg'
+import typescript from '../../../../assets/typescript.svg'
 import { motion } from 'framer-motion'
 
 export function Intro() {
@@ -26,12 +26,12 @@ export function Intro() {
           <Name>Marcos Vinicius</Name>
           <SubTitle>Fullstack Developer</SubTitle>
 
-          <section>
+          <div className="section">
             <span className="numeroEspecial">1.6</span>
             <span>anos de experiência</span>
             <span className="numeroEspecial">10</span>
             <span>projetos completos</span>
-          </section>
+          </div>
         </MyContent>
       </motion.div>
 
