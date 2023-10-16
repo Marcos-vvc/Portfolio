@@ -38,6 +38,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body {
+   
       background: linear-gradient(
     130deg,
     #000 0%,
