@@ -5,9 +5,24 @@ export const ContainerMain = styled.main`
 
   h2 {
     font-size: 2rem;
-    color: ${(props) => props.theme['blue-normal']};
     border-bottom: 1px solid gray;
     padding-bottom: 32px;
+    color: ${(props) => props.theme['blue-normal']};
+  }
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 32px;
+    margin-left: 8px;
+    gap: 8px;
+    text-decoration: none;
+    transition: 0.2s;
+    color: ${(props) => props.theme['gray-300']};
+
+    &:hover {
+      color: ${(props) => props.theme['blue-normal']};
+    }
   }
 `
 export const Content = styled.div`
@@ -50,11 +65,11 @@ export const ProjectInfo = styled.div`
     align-items: center;
     gap: 8px;
     cursor: pointer;
-    color: #fff;
     border: none;
     background: none;
     text-decoration: none;
     transition: 0.2s;
+    color: ${(props) => props.theme['gray-300']};
 
     &:hover {
       color: ${(props) => props.theme['blue-normal']};

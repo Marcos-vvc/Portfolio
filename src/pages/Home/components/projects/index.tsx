@@ -6,8 +6,8 @@ import { HiArrowNarrowRight } from 'react-icons/hi'
 export function Projects() {
   return (
     <ContainerMain>
+      <span>../competências</span>
       <h2>../Projetos em destaque</h2>
-
       <Content>
         <Project>
           <img src={Fundo} alt="" />
@@ -37,7 +37,6 @@ export function Projects() {
           </ProjectInfo>
         </Project>
       </Content>
-
       <Content>
         <Project>
           <img src={Fundo} alt="" />
@@ -69,6 +68,11 @@ export function Projects() {
           </ProjectInfo>
         </Project>
       </Content>
+      Se interessou?
+      <Link to="https://github.com/Marcos-vvc/GitHub-Blog" target="blank">
+        Ver projeto
+        <HiArrowNarrowRight size={18} />
+      </Link>
     </ContainerMain>
   )
 }
