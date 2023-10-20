@@ -15,6 +15,7 @@ export const GlobalStyle = createGlobalStyle`
 
     @media (max-width: 768px) {
       font-size: 87.5%; /* 14px */
+  
     }
   }
 
@@ -34,18 +35,22 @@ export const GlobalStyle = createGlobalStyle`
 
     :focus {
         outline: 0;
-        /* box-shadow: 0 0 0 0.5px ${(props) => props.theme['#3294F8']}; */
+        box-shadow: 0 0 0 0.5px ${(props) => props.theme['#3294F8']};
     }
 
-    body {
+    body { 
+      
+
+    background: ${(props) => props.theme['gray-800']};
+
    
-      background: linear-gradient(
+      /* background: linear-gradient(
     130deg,
     #000 0%,
     #272727 44.03%,
     #494949 99.99%,
     #727272 100%
-  );
+  ); */
       color: ${(props) => props.theme['text-color']};
 
         -webkit-font-smoothing: antialised;

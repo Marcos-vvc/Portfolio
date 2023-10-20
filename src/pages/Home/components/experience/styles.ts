@@ -2,10 +2,23 @@ import styled from 'styled-components'
 
 export const XpContainer = styled.main`
   padding: 4rem;
-  /* column-gap: 64px; */
+  display: grid;
+  grid-template-columns: 35% 1fr;
+  grid-column-gap: 64px;
+  line-height: 1.6;
+  /* padding: 4rem 38rem; */
 
-  .section {
+  @media (max-width: 425px) {
     display: flex;
-    max-width: 420px;
+    flex-direction: column;
+  }
+`
+
+export const Content = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  p {
+    margin-top: 24px;
   }
 `

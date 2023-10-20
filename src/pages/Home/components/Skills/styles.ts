@@ -3,6 +3,7 @@ import styled from 'styled-components'
 export const ContainerMain = styled.div`
   margin-top: 9.25rem;
   padding: 4rem;
+  /* background: ${(props) => props.theme['gray-800']}; */
 `
 
 export const Content = styled.main`

@@ -1,11 +1,14 @@
 import styled from 'styled-components'
 
 export const LayoutContainer = styled.div`
-  .container {
-    margin-right: auto;
-    margin-left: auto;
+  > main {
     width: 100%;
-    max-width: 88.5rem;
-    padding: 0 1.5rem;
+    max-width: 88rem;
+    margin: 0 auto;
+    /* padding: 0 1.5rem; */
+
+    @media (max-width: 54rem) {
+      padding: 0 1.5rem;
+    }
   }
 `

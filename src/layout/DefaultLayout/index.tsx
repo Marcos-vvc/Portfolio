@@ -5,8 +5,10 @@ import { Header } from '../../components/Header'
 export function DefaultLayout() {
   return (
     <LayoutContainer>
-      <Header />
-      <Outlet />
+      <main>
+        <Header />
+        <Outlet />
+      </main>
     </LayoutContainer>
   )
 }

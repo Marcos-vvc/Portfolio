@@ -2,11 +2,17 @@ import styled from 'styled-components'
 
 export const IntroContainer = styled.div`
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   width: 100%;
-  margin-top: -3rem;
+  margin-top: -4rem;
   height: 60rem;
+
+  @media (max-width: 1024px) {
+    flex-direction: column-reverse;
+    text-align: center;
+    font-size: 87.5%; /* 14px */
+  }
 `
 
 export const MyContent = styled.div`
@@ -42,6 +48,9 @@ export const MyContent = styled.div`
       border-top: 15px solid transparent;
     }
   }
+
+  @media (max-width: 1024px) {
+  }
 `
 export const Title = styled.span`
   color: ${(props) => props.theme.white};
@@ -61,8 +70,9 @@ export const SubTitle = styled.span`
 
 export const LogoReact = styled.div`
   display: flex;
+
   width: 34.063rem;
-  position: static;
+  /* position: static; */
 
   img {
     &:nth-of-type(1) {

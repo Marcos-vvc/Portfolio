@@ -7,7 +7,7 @@ export function Projects() {
   return (
     <ContainerMain>
       <span>../competências</span>
-      <h2>../Projetos em destaque</h2>
+      <h2>Projetos em destaque</h2>
       <Content>
         <Project>
           <img src={Fundo} alt="" />
@@ -70,7 +70,7 @@ export function Projects() {
       </Content>
       Se interessou?
       <Link to="https://github.com/Marcos-vvc/GitHub-Blog" target="blank">
-        Ver projeto
+        Ver todos
         <HiArrowNarrowRight size={18} />
       </Link>
     </ContainerMain>

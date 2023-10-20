@@ -1,14 +1,34 @@
 import styled from 'styled-components'
+import Ground from '../../assets/Background.png'
 
+export const BgGround = styled.div`
+  /* width: 100%; */
+  background: ${(props) => props.theme['gray-900']};
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+  @media (max-width: 425px) {
+    width: 100%;
+  }
+
+  /* background-image: url(${Ground});
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat; */
+`
 export const HeaderContainer = styled.main`
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  padding: 3rem;
+  padding: 4rem;
+  width: 100%;
+  flex: 1;
 
   header {
     display: flex;
     align-items: center;
-    gap: 3.938rem;
+    gap: 2rem;
     font-size: 1.125rem;
     color: ${(props) => props.theme.white};
   }
