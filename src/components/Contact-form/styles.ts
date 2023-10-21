@@ -1,8 +1,7 @@
 import styled from 'styled-components'
 
-export const BgGround = styled.div`
-  /* background-color: ${(props) => props.theme['gray-900']}; */
-`
+export const BgGround = styled.div``
+
 export const ContainerForm = styled.main`
   display: flex;
   flex-direction: column;
@@ -16,8 +15,9 @@ export const ContainerForm = styled.main`
     flex-direction: column;
     gap: 1rem;
     padding: 3rem;
+    margin-top: 48px;
     width: 100%;
-    max-width: 32.5rem;
+    /* max-width: 520px; */
 
     ::placeholder {
       color: ${(props) => props.theme['gray-400']};
@@ -29,6 +29,7 @@ export const ContainerForm = styled.main`
     }
 
     input {
+      width: 100%;
       border: none;
       padding: 1rem;
       border-radius: 0.5rem;
@@ -37,6 +38,7 @@ export const ContainerForm = styled.main`
     }
 
     textarea {
+      width: 100%;
       border: none;
       resize: none;
       height: 8.625rem;
@@ -63,7 +65,6 @@ export const ContainerForm = styled.main`
 
       &:not(:disabled):hover {
         background: ${(props) => props.theme['gray-800']};
-        /* transition: background-color 0.2s; */
       }
 
       &:hover {
@@ -74,18 +75,25 @@ export const ContainerForm = styled.main`
         cursor: not-allowed;
       }
     }
-
-    @media (max-width: 425px) {
-      flex: 1;
-      width: 100%;
-      max-width: 520px;
-    }
   }
 `
+
+export const FormContainer = styled.div`
+  width: 100%;
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+`
+
 export const Texts = styled.div`
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
   gap: 1rem;
+
+  h2 {
+    font-size: 1.875rem;
+    line-height: 1.6;
+  }
 `

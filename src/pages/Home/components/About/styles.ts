@@ -5,7 +5,6 @@ export const AboutContainer = styled.div`
   grid-template-columns: repeat(2, auto);
   grid-column-gap: 3rem;
   align-items: center;
-  margin-top: 4rem;
 
   img {
     width: 36.5rem;
@@ -18,7 +17,7 @@ export const AboutContainer = styled.div`
 
     img {
       padding: 0 auto;
-      width: 28rem;
+      width: 22.9rem;
       height: 18rem;
     }
   }

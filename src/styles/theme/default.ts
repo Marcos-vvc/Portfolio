@@ -13,15 +13,3 @@ export const defaultTheme = {
   'gray-800': '#1F2937',
   'gray-900': '#0C121C',
 }
-
-// white: '#FFFFFF',
-
-// 'bg-ground': '#FAFAFA',
-// 'base-card': '#F3F2F2',
-// 'base-input': '#EDEDED',
-// 'base-button': '#E6E5E5',
-// 'base-hover': '#D7D5D5',
-// 'base-label': '#8D8686',
-// 'base-text': '#574F4D',
-// 'base-subtitle': '#403937',
-// 'base-title': '#272221',

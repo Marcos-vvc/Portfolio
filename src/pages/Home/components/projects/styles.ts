@@ -112,4 +112,8 @@ export const Tag = styled.span`
     border-radius: 0.5rem;
     background: rgb(75 85 99);
   }
+
+  @media (max-width: 425px) {
+    flex-wrap: wrap;
+  }
 `

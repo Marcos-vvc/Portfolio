@@ -1,8 +1,7 @@
 import { useForm } from 'react-hook-form'
-import { BgGround, ContainerForm, Texts } from './styles'
+import { BgGround, ContainerForm, FormContainer, Texts } from './styles'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { HiArrowNarrowRight } from 'react-icons/hi'
-import { Footer } from '../Footer'
 
 import { z } from 'zod'
 
@@ -29,38 +28,41 @@ export function ContactForm() {
       <ContainerForm>
         <Texts>
           <span>../contato</span>
-          <h2>Vamos trabalhar juntos? Entre em contato</h2>
+          <h2>
+            Vamos trabalhar juntos? <br /> Entre em contato
+          </h2>
         </Texts>
 
-        <form onSubmit={handleSubmit}>
-          <input
-            type="text"
-            placeholder="Nome"
-            required
-            {...register('name')}
-          />
+        <FormContainer>
+          <form onSubmit={handleSubmit}>
+            <input
+              type="text"
+              placeholder="Nome"
+              required
+              {...register('name')}
+            />
 
-          <input
-            type="email"
-            placeholder="E-mail"
-            required
-            {...register('email')}
-          />
+            <input
+              type="email"
+              placeholder="E-mail"
+              required
+              {...register('email')}
+            />
 
-          <textarea
-            placeholder="Mensagem"
-            required
-            {...register('message')}
-            maxLength={500}
-          />
+            <textarea
+              placeholder="Mensagem"
+              required
+              {...register('message')}
+              maxLength={500}
+            />
 
-          <button type="submit" disabled={isSubmitting}>
-            Enviar mensagem
-            <HiArrowNarrowRight size={18} />
-          </button>
-        </form>
+            <button type="submit" disabled={isSubmitting}>
+              Enviar mensagem
+              <HiArrowNarrowRight size={18} />
+            </button>
+          </form>
+        </FormContainer>
       </ContainerForm>
-      <Footer />
     </BgGround>
   )
 }

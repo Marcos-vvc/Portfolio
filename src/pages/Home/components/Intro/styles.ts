@@ -11,7 +11,6 @@ export const IntroContainer = styled.div`
   @media (max-width: 1024px) {
     flex-direction: column-reverse;
     text-align: center;
-    font-size: 87.5%; /* 14px */
   }
 `
 
@@ -29,8 +28,12 @@ export const MyContent = styled.div`
     .numeroEspecial {
       font-size: 5rem;
       font-weight: 700;
-      height: 101px;
+      height: 6.313rem;
       color: ${(props) => props.theme['text-number']};
+
+      @media (max-width: 1024px) {
+        font-size: 2.5rem;
+      }
     }
 
     span {
@@ -39,6 +42,10 @@ export const MyContent = styled.div`
       font-size: 1.688rem;
       font-family: 'Open Sans';
       font-weight: 300;
+
+      @media (max-width: 1024px) {
+        font-size: 1rem;
+      }
     }
 
     span:nth-of-type(2) {
@@ -47,9 +54,14 @@ export const MyContent = styled.div`
     span:nth-of-type(4) {
       border-top: 15px solid transparent;
     }
+
+    @media (max-width: 1024px) {
+      flex-direction: column;
+    }
   }
 
   @media (max-width: 1024px) {
+    font-size: 15px;
   }
 `
 export const Title = styled.span`
@@ -59,20 +71,26 @@ export const Title = styled.span`
 export const Name = styled.span`
   color: ${(props) => props.theme['blue-normal']};
   font-size: 4.25rem;
+
+  @media (max-width: 1024px) {
+    font-size: 2.125rem;
+  }
 `
 export const SubTitle = styled.span`
   color: ${(props) => props.theme['text-title']};
   font-size: 2.5rem;
   font-family: 'Open Sans';
   font-weight: 500;
-  margin-top: 38px;
+  margin-top: 2.375rem;
+
+  @media (max-width: 1024px) {
+    font-size: 1.5rem;
+  }
 `
 
 export const LogoReact = styled.div`
   display: flex;
-
-  width: 34.063rem;
-  /* position: static; */
+  max-width: 34.063rem;
 
   img {
     &:nth-of-type(1) {
@@ -81,6 +99,10 @@ export const LogoReact = styled.div`
       left: 12%;
       width: 8rem;
       height: 8rem;
+
+      @media (max-width: 1024px) {
+        display: none;
+      }
     }
 
     &:nth-of-type(2) {
@@ -88,6 +110,11 @@ export const LogoReact = styled.div`
       height: 25rem;
       border-radius: 32.875rem;
       background: #2d2d2d;
+
+      @media (max-width: 1024px) {
+        width: 15rem;
+        height: 15rem;
+      }
     }
 
     &:nth-of-type(3) {
@@ -96,6 +123,10 @@ export const LogoReact = styled.div`
       height: 5.25rem;
       top: 1rem;
       right: 15%;
+
+      @media (max-width: 1024px) {
+        display: none;
+      }
     }
 
     &:nth-of-type(4) {
@@ -104,6 +135,12 @@ export const LogoReact = styled.div`
       right: 32%;
       width: 5rem;
       height: 5rem;
+
+      @media (max-width: 1024px) {
+        display: none;
+      }
+    }
+    @media (max-width: 1024px) {
     }
   }
 `

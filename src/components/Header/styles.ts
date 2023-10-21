@@ -2,14 +2,11 @@ import styled from 'styled-components'
 import Ground from '../../assets/Background.png'
 
 export const BgGround = styled.div`
-  /* width: 100%; */
   background: ${(props) => props.theme['gray-900']};
 
   @media (max-width: 768px) {
-    width: 100%;
   }
   @media (max-width: 425px) {
-    width: 100%;
   }
 
   /* background-image: url(${Ground});
@@ -20,10 +17,12 @@ export const BgGround = styled.div`
 export const HeaderContainer = styled.main`
   display: flex;
   align-items: center;
+  justify-content: center;
   justify-content: space-between;
   padding: 4rem;
   width: 100%;
-  flex: 1;
+  max-width: 88rem;
+  margin: 0 auto;
 
   header {
     display: flex;
