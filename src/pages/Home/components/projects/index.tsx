@@ -1,5 +1,6 @@
 import { ContainerMain, Content, Project, ProjectInfo, Tag } from './styles'
-import Fundo from '../../../../assets/Fundo.png'
+import GitBlog from '../../../../assets/github.png'
+import Coffee from '../../../../assets/cafe.png'
 import { Link } from 'react-router-dom'
 import { HiArrowNarrowRight } from 'react-icons/hi'
 
@@ -10,16 +11,14 @@ export function Projects() {
       <h2>Projetos em destaque</h2>
       <Content>
         <Project>
-          <img src={Fundo} alt="" />
-
+          <img src={GitBlog} alt="GitHub Blog" />
           <ProjectInfo>
-            <h3>Blog-Git</h3>
+            <h3>GitHub-Blog</h3>
 
             <p>
-              Este projeto foi desenvolvido durante o bootcamp Ignite da
-              Rocketseat. O projeto permite ao usuário criar uma conta e receber
-              agendamentos no calendário usando a API do Google, um projeto
-              semelhante ao Calendly.
+              Durante este desafio, desenvolvemos uma aplicação que utiliza a
+              API do GitHub para buscar issues de um repositório, dados do
+              perfil e exibir elas como um blog.
             </p>
 
             <Tag>
@@ -28,6 +27,7 @@ export function Projects() {
               <span>Styled-Component</span>
               <span>Axios</span>
               <span>Date-fns</span>
+              <span>Hooks</span>
             </Tag>
 
             <Link to="https://github.com/Marcos-vvc/GitHub-Blog" target="blank">
@@ -39,24 +39,23 @@ export function Projects() {
       </Content>
       <Content>
         <Project>
-          <img src={Fundo} alt="" />
+          <img src={Coffee} alt="" />
 
           <ProjectInfo>
-            <h3>Blog-Git</h3>
+            <h3>Coffee Delivery</h3>
 
             <p>
-              Lorem Ipsum é simplesmente uma simulação de texto da indústria
-              tipográfica e de impressos, e vem sendo utilizado desde o século
-              XVI, quando um impressor desconhecido pegou uma bandeja de tipos e
-              os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum
-              sobreviveu não só a cinco séculos, como também ao salto para a
-              editoração eletrônica, permanecendo essencialmente inalterado.
+              Coffee Delivery é uma página web de catálogo e compra de cafés.
+              Esse projeto é um dos desafios da trilha de React do Ignite,
+              bootcamp completo de especialização em React, React Native e
+              Node.js. Projeto foi proposto como desafio, sendo assim
+              disponibilizado somente o layout(figma) para desenvolvimento.
             </p>
 
             <Tag>
               <span>React</span>
               <span>Axios</span>
-              <span>Date-fns</span>
+              <span>Context</span>
               <span>Typescript</span>
               <span>Styled-Component</span>
             </Tag>

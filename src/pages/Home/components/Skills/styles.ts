@@ -3,7 +3,6 @@ import styled from 'styled-components'
 export const ContainerMain = styled.div`
   margin-top: 9.25rem;
   padding: 4rem;
-  /* background: ${(props) => props.theme['gray-800']}; */
 `
 
 export const Content = styled.main`
@@ -16,13 +15,13 @@ export const Content = styled.main`
 export const Title = styled.h2`
   display: flex;
   font-size: 2rem;
+  margin-top: 1rem;
   color: ${(props) => props.theme['blue-normal']};
 `
 export const ContainerSkills = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(16.5rem, 1fr));
-  gap: 12px;
-  margin-top: 3.75rem;
+  gap: 0.75rem;
   width: 100%;
 
   .Card {

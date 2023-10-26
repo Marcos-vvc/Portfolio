@@ -1,5 +1,11 @@
 import { useForm } from 'react-hook-form'
-import { BgGround, ContainerForm, FormContainer, Texts } from './styles'
+import {
+  BgGround,
+  ContainerForm,
+  FormContainer,
+  FormContent,
+  Texts,
+} from './styles'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { HiArrowNarrowRight } from 'react-icons/hi'
 
@@ -24,45 +30,43 @@ export function ContactForm() {
   })
 
   return (
-    <BgGround>
-      <ContainerForm>
-        <Texts>
-          <span>../contato</span>
-          <h2>
-            Vamos trabalhar juntos? <br /> Entre em contato
-          </h2>
-        </Texts>
+    <ContainerForm>
+      <Texts>
+        <span>../contato</span>
+        <h2>
+          Vamos trabalhar juntos? <br /> Entre em contato
+        </h2>
+      </Texts>
 
-        <FormContainer>
-          <form onSubmit={handleSubmit}>
-            <input
-              type="text"
-              placeholder="Nome"
-              required
-              {...register('name')}
-            />
+      <FormContent>
+        <form onSubmit={handleSubmit}>
+          <input
+            type="text"
+            placeholder="Nome"
+            required
+            {...register('name')}
+          />
 
-            <input
-              type="email"
-              placeholder="E-mail"
-              required
-              {...register('email')}
-            />
+          <input
+            type="email"
+            placeholder="E-mail"
+            required
+            {...register('email')}
+          />
 
-            <textarea
-              placeholder="Mensagem"
-              required
-              {...register('message')}
-              maxLength={500}
-            />
+          <textarea
+            placeholder="Mensagem"
+            required
+            {...register('message')}
+            maxLength={500}
+          />
 
-            <button type="submit" disabled={isSubmitting}>
-              Enviar mensagem
-              <HiArrowNarrowRight size={18} />
-            </button>
-          </form>
-        </FormContainer>
-      </ContainerForm>
-    </BgGround>
+          <button type="submit" disabled={isSubmitting}>
+            Enviar mensagem
+            <HiArrowNarrowRight size={18} />
+          </button>
+        </form>
+      </FormContent>
+    </ContainerForm>
   )
 }

@@ -5,6 +5,7 @@ export const AboutContainer = styled.div`
   grid-template-columns: repeat(2, auto);
   grid-column-gap: 3rem;
   align-items: center;
+  margin-top: 4rem;
 
   img {
     width: 36.5rem;
@@ -28,7 +29,7 @@ export const Content = styled.div`
   .ContainerIcons {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 0.75rem;
     margin-top: 1.875rem;
 
     svg:hover {
@@ -45,7 +46,7 @@ export const Content = styled.div`
 
   .react-icons {
     display: flex;
-    gap: 12px;
+    gap: 0.75rem;
     color: #4b5563;
   }
 
@@ -62,6 +63,10 @@ export const Content = styled.div`
   }
 
   button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
     cursor: pointer;
     color: ${(props) => props.theme.white};
     background: rgba(75, 85, 99, 0.2);
@@ -70,10 +75,6 @@ export const Content = styled.div`
     border-radius: 0.5rem;
     border: none;
     transition: all 0.3s ease 0s;
-
-    svg {
-      margin-left: 0.5rem;
-    }
 
     &:hover {
       background: rgb(75 85 99);

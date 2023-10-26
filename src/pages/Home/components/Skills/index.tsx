@@ -13,7 +13,8 @@ import {
 export function Skills() {
   return (
     <ContainerMain>
-      <Title>../Conhecimentos</Title>
+      <span>../competências</span>
+      <Title>Conhecimentos</Title>
       <Content>
         <ContainerSkills>
           <div className="Card">

@@ -4,14 +4,13 @@ export const WorkContainer = styled.main`
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* background: gray; */
 `
 
 export const Content = styled.div`
   display: grid;
-  grid-template-columns: 40px 1fr;
-  grid-column-gap: 40px;
-  margin-top: 24px;
+  grid-template-columns: 2.5rem 1fr;
+  grid-column-gap: 2.5rem;
+  margin-top: 1.5rem;
 `
 
 export const Imag = styled.div`
@@ -36,9 +35,9 @@ export const Imag = styled.div`
 export const Uber = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 0.5rem;
 
   p {
-    margin-top: 24px;
+    margin-top: 1.5rem;
   }
 `

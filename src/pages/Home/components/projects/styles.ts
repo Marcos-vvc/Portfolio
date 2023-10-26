@@ -10,15 +10,26 @@ export const ContainerMain = styled.main`
 
     img {
       width: 100%;
-      /* width: 40rem; */
     }
   }
 
   h2 {
     font-size: 2rem;
-    border-bottom: 1px solid gray;
+    margin-top: 1rem;
     padding-bottom: 2rem;
-    color: ${(props) => props.theme['blue-normal']};
+    border-bottom: 1px solid gray;
+    /* color: ${(props) => props.theme['blue-normal']}; */
+
+    opacity: 0.9;
+
+    background: linear-gradient(
+      180deg,
+      rgba(75, 85, 99, 1) 0%,
+      rgba(128, 71, 248, 1) 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   a {
@@ -38,13 +49,19 @@ export const ContainerMain = styled.main`
 `
 export const Content = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   margin-top: 2rem;
   border-bottom: 1px solid gray;
   padding-bottom: 4rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `
 export const Project = styled.div`
   display: flex;
+  flex-direction: row;
   gap: 3rem;
   margin-top: 4rem;
 
@@ -52,6 +69,9 @@ export const Project = styled.div`
     border-radius: 0.5rem;
     width: 26.25rem;
     height: 19rem;
+    object-fit: cover;
+    border: 1px solid white;
+    background: ${(props) => props.theme['gray-800']};
   }
 
   @media (max-width: 768px) {
@@ -60,7 +80,7 @@ export const Project = styled.div`
 
     img {
       width: 100%;
-      /* width: 40rem; */
+      max-height: 15.625rem;
     }
   }
 `

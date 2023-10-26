@@ -28,10 +28,13 @@ export function Intro() {
             <SubTitle>Fullstack Developer</SubTitle>
 
             <div className="section">
-              <span className="numeroEspecial">1.6</span>
-              <span>anos de experiência</span>
-              <span className="numeroEspecial">10</span>
-              <span>projetos completos</span>
+              <span className="numeroEspecial">
+                1.6<span>anos de experiência</span>
+              </span>
+
+              <span className="numeroEspecial">
+                10<span>projetos completos</span>
+              </span>
             </div>
           </MyContent>
         </motion.div>

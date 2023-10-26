@@ -17,7 +17,7 @@ export const IntroContainer = styled.div`
 export const MyContent = styled.div`
   display: flex;
   flex-direction: column;
-  width: 41.625rem;
+  max-width: 41.625rem;
 
   .section {
     display: flex;
@@ -37,11 +37,15 @@ export const MyContent = styled.div`
     }
 
     span {
+      display: flex;
+      align-items: center;
+      gap: 1.125rem;
       color: ${(props) => props.theme['text-color']};
       text-transform: uppercase;
       font-size: 1.688rem;
       font-family: 'Open Sans';
       font-weight: 300;
+      text-decoration: none;
 
       @media (max-width: 1024px) {
         font-size: 1rem;
@@ -61,7 +65,8 @@ export const MyContent = styled.div`
   }
 
   @media (max-width: 1024px) {
-    font-size: 15px;
+    font-size: 0.938rem;
+    margin-top: 64px;
   }
 `
 export const Title = styled.span`
@@ -139,8 +144,6 @@ export const LogoReact = styled.div`
       @media (max-width: 1024px) {
         display: none;
       }
-    }
-    @media (max-width: 1024px) {
     }
   }
 `
