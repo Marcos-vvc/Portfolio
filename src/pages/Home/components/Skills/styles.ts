@@ -3,6 +3,11 @@ import styled from 'styled-components'
 export const ContainerMain = styled.div`
   margin-top: 9.25rem;
   padding: 4rem;
+
+  > span {
+    font-family: 'IBM Plex Mono';
+    color: ${(props) => props.theme['blue-normal']};
+  }
 `
 
 export const Content = styled.main`
@@ -16,7 +21,16 @@ export const Title = styled.h2`
   display: flex;
   font-size: 2rem;
   margin-top: 1rem;
-  color: ${(props) => props.theme['blue-normal']};
+
+  opacity: 0.9;
+  background: linear-gradient(
+    180deg,
+    rgba(249, 250, 251, 1) 0%,
+    rgba(209, 213, 219, 1) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 `
 export const ContainerSkills = styled.div`
   display: grid;
@@ -38,7 +52,7 @@ export const ContainerSkills = styled.div`
       background: rgb(75 85 99);
     }
     &:hover {
-      color: rgb(50, 148, 248);
+      color: ${(props) => props.theme['blue-normal']};
     }
   }
 

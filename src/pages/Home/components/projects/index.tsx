@@ -1,6 +1,13 @@
-import { ContainerMain, Content, Project, ProjectInfo, Tag } from './styles'
+import {
+  Card,
+  ContainerMain,
+  Content,
+  Project,
+  ProjectInfo,
+  Tag,
+} from './styles'
 import GitBlog from '../../../../assets/github.png'
-import Coffee from '../../../../assets/cafe.png'
+import Coffee from '../../../../assets/coffe.png'
 import { Link } from 'react-router-dom'
 import { HiArrowNarrowRight } from 'react-icons/hi'
 
@@ -11,7 +18,13 @@ export function Projects() {
       <h2>Projetos em destaque</h2>
       <Content>
         <Project>
-          <img src={GitBlog} alt="GitHub Blog" />
+          <Card>
+            <img src={GitBlog} alt="GitHub Blog" />
+            <div className="content">
+              <h3 className="title">GitHub-Blog</h3>
+              <p className="sub-title">Aplicação Web</p>
+            </div>
+          </Card>
           <ProjectInfo>
             <h3>GitHub-Blog</h3>
 
@@ -24,10 +37,10 @@ export function Projects() {
             <Tag>
               <span>React</span>
               <span>Typescript</span>
-              <span>Styled-Component</span>
               <span>Axios</span>
-              <span>Date-fns</span>
               <span>Hooks</span>
+              <span>Date-fns</span>
+              <span>Styled-Component</span>
             </Tag>
 
             <Link to="https://github.com/Marcos-vvc/GitHub-Blog" target="blank">
@@ -39,7 +52,14 @@ export function Projects() {
       </Content>
       <Content>
         <Project>
-          <img src={Coffee} alt="" />
+          <Card>
+            {/* <img src={Coffee} alt="Coffee-Delivery" /> */}
+            <img src="https://user-images.githubusercontent.com/71772559/178171983-f724d1a7-deb4-4d13-aa92-09e1cac4ec36.png" />
+            <div className="content">
+              <h3 className="title">Coffee-Delivery</h3>
+              <p className="sub-title">Aplicação Web</p>
+            </div>
+          </Card>
 
           <ProjectInfo>
             <h3>Coffee Delivery</h3>

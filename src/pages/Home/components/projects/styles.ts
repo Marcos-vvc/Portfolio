@@ -4,13 +4,9 @@ export const ContainerMain = styled.main`
   padding: 4rem;
   line-height: 1.6;
 
-  @media (max-width: 768px) {
-    flex-direction: column;
-    align-items: center;
-
-    img {
-      width: 100%;
-    }
+  > span {
+    font-family: 'IBM Plex Mono';
+    color: ${(props) => props.theme['blue-normal']};
   }
 
   h2 {
@@ -18,14 +14,12 @@ export const ContainerMain = styled.main`
     margin-top: 1rem;
     padding-bottom: 2rem;
     border-bottom: 1px solid gray;
-    /* color: ${(props) => props.theme['blue-normal']}; */
 
     opacity: 0.9;
-
     background: linear-gradient(
       180deg,
-      rgba(75, 85, 99, 1) 0%,
-      rgba(128, 71, 248, 1) 100%
+      rgba(249, 250, 251, 1) 0%,
+      rgba(209, 213, 219, 1) 100%
     );
     background-clip: text;
     -webkit-background-clip: text;
@@ -53,47 +47,95 @@ export const Content = styled.div`
   margin-top: 2rem;
   border-bottom: 1px solid gray;
   padding-bottom: 4rem;
-
-  @media (max-width: 768px) {
-    flex-direction: column;
-    align-items: center;
-  }
 `
 export const Project = styled.div`
   display: flex;
   flex-direction: row;
   gap: 3rem;
   margin-top: 4rem;
-
-  img {
-    border-radius: 0.5rem;
-    width: 26.25rem;
-    height: 19rem;
-    object-fit: cover;
-    border: 1px solid white;
-    background: ${(props) => props.theme['gray-800']};
-  }
+  width: 100%;
 
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: center;
+  }
+`
+
+export const Card = styled.div`
+  max-width: 26.25rem;
+  height: 19rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  position: relative;
+  overflow: hidden;
+  border: none;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+  }
+
+  .content {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    position: absolute;
+    opacity: 0;
+    backdrop-filter: blur(5px);
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  transition: 0.2s;
+
+  &:hover .content {
+    border: 2px solid ${(props) => props.theme['blue-normal']};
+    opacity: 1;
+  }
+
+  .title {
+    text-transform: uppercase;
+    color: ${(props) => props.theme['gray-50']};
+  }
+
+  .sub-title {
+    text-transform: capitalize;
+    color: ${(props) => props.theme['gray-400']};
+  }
+
+  @media (max-width: 1024px) {
+    min-width: 26rem;
+    width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
 
     img {
       width: 100%;
-      max-height: 15.625rem;
     }
   }
 `
+
 export const ProjectInfo = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-
   gap: 1.5rem;
 
-  h2 {
-    font-size: 2rem;
-    color: ${(props) => props.theme['blue-normal']};
+  p {
+    color: ${(props) => props.theme['gray-400']};
+  }
+
+  h3 {
+    font-size: 1.125rem;
+    color: ${(props) => props.theme['gray-50']};
   }
 
   span {
@@ -115,25 +157,28 @@ export const ProjectInfo = styled.div`
       color: ${(props) => props.theme['blue-normal']};
     }
   }
+
+  @media (max-width: 768px) {
+    flex-wrap: nowrap;
+  }
 `
 
-export const Tag = styled.span`
+export const Tag = styled.div`
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
   gap: 0.75rem;
   width: 20.25rem;
-  /* height: 68px; */
+  width: 100%;
 
   span {
-    color: ${(props) => props.theme['blue-normal']};
-
     padding: 0.25rem 0.75rem;
     border-radius: 0.5rem;
-    background: rgb(75 85 99);
+    color: ${(props) => props.theme['blue-normal']};
+    background: ${(props) => props.theme['blue-bg']};
   }
 
-  @media (max-width: 425px) {
+  @media (max-width: 768px) {
+    width: 100%;
     flex-wrap: wrap;
   }
 `

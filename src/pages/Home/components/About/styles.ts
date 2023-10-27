@@ -34,7 +34,7 @@ export const Content = styled.div`
 
     svg:hover {
       cursor: pointer;
-      color: ${(props) => props.theme['blue-normal']};
+      color: ${(props) => props.theme['gray-50']};
       transition: all 0.3s ease 0s;
     }
 
@@ -47,7 +47,7 @@ export const Content = styled.div`
   .react-icons {
     display: flex;
     gap: 0.75rem;
-    color: #4b5563;
+    color: ${(props) => props.theme['gray-600']};
   }
 
   span {
@@ -59,7 +59,7 @@ export const Content = styled.div`
     margin-top: 1.875rem;
     font-family: 'Open Sans';
     font-size: 1.125rem;
-    color: ${(props) => props.theme['text-color']};
+    color: ${(props) => props.theme['gray-400']};
   }
 
   button {

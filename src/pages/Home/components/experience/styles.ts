@@ -17,8 +17,22 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
 
+  span {
+    font-family: 'IBM Plex Mono';
+    color: ${(props) => props.theme['blue-normal']};
+  }
+
   h1 {
     margin-top: 1rem;
+    opacity: 0.9;
+    background: linear-gradient(
+      180deg,
+      rgba(249, 250, 251, 1) 0%,
+      rgba(209, 213, 219, 1) 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   p {

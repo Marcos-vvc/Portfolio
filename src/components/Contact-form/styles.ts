@@ -99,9 +99,24 @@ export const Texts = styled.div`
   align-items: center;
   gap: 1rem;
 
+  span {
+    font-family: 'IBM Plex Mono';
+    color: ${(props) => props.theme['blue-normal']};
+  }
+
   h2 {
     font-size: 1.875rem;
     line-height: 1.6;
+
+    opacity: 0.9;
+    background: linear-gradient(
+      180deg,
+      rgba(249, 250, 251, 1) 0%,
+      rgba(209, 213, 219, 1) 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   @media (max-width: 768px) {
