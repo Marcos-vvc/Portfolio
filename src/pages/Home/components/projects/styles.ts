@@ -70,6 +70,12 @@ export const Card = styled.div`
   overflow: hidden;
   border: none;
 
+  a {
+    display: flex;
+    text-decoration: none;
+    width: 100%;
+  }
+
   img {
     width: 100%;
     height: 100%;
@@ -91,8 +97,8 @@ export const Card = styled.div`
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    transition: 0.3s;
   }
-  transition: 0.2s;
 
   &:hover .content {
     border: 2px solid ${(props) => props.theme['blue-normal']};

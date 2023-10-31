@@ -17,27 +17,40 @@ export const Imag = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
+  gap: 1rem;
 
   img {
     border: 1px solid gray;
-    border-radius: 40px;
-    width: 40px;
-    height: 40px;
+    border-radius: 2.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
   }
 
   .line {
     height: 100%;
-    background: gray;
-    width: 1px;
+    width: 2px;
+    background: ${(props) => props.theme['gray-600']};
   }
 `
-export const Uber = styled.div`
+export const CardWork = styled.div`
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 
+  > h3 {
+    color: ${(props) => props.theme['gray-300']};
+  }
+
+  > h4 {
+    font-family: 'IBM Plex Mono';
+    color: ${(props) => props.theme['gray-500']};
+  }
+
+  > span {
+    color: ${(props) => props.theme['gray-500']};
+  }
+
   p {
-    margin-top: 1.5rem;
+    color: ${(props) => props.theme['gray-400']};
   }
 `

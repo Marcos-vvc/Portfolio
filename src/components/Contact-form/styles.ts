@@ -17,6 +17,13 @@ export const ContainerForm = styled.div`
     margin-top: 3rem;
     width: 100%;
 
+    .filter {
+      filter: blur(2px);
+      background: ${(props) => props.theme['blue-normal']};
+      &:hover {
+      }
+    }
+
     ::placeholder {
       color: ${(props) => props.theme['gray-400']};
     }
@@ -33,9 +40,6 @@ export const ContainerForm = styled.div`
       border-radius: 0.5rem;
       color: ${(props) => props.theme['gray-50']};
       background: ${(props) => props.theme['gray-800']};
-
-      @media (max-width: 768px) {
-      }
     }
 
     textarea {
@@ -62,13 +66,12 @@ export const ContainerForm = styled.div`
       width: 12.375rem;
       cursor: pointer;
       color: ${(props) => props.theme['gray-50']};
-      background: ${(props) => props.theme['blue-normal']};
+      background: rgba(75, 85, 99, 0.2);
+      transition: all 0.3s ease 0s;
 
       &:not(:disabled):hover {
-        background: ${(props) => props.theme['gray-800']};
-      }
-
-      &:hover {
+        box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+        color: rgb(50, 148, 248);
       }
 
       &:disabled {

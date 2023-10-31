@@ -26,30 +26,6 @@ export const AboutContainer = styled.div`
 export const Content = styled.div`
   line-height: 1.6;
 
-  .ContainerIcons {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    margin-top: 1.875rem;
-
-    svg:hover {
-      cursor: pointer;
-      color: ${(props) => props.theme['gray-50']};
-      transition: all 0.3s ease 0s;
-    }
-
-    @media (max-width: 1024px) {
-      display: flex;
-      flex-direction: column;
-    }
-  }
-
-  .react-icons {
-    display: flex;
-    gap: 0.75rem;
-    color: ${(props) => props.theme['gray-600']};
-  }
-
   span {
     font-size: 3.75rem;
     color: ${(props) => props.theme['blue-normal']};
@@ -77,9 +53,7 @@ export const Content = styled.div`
     transition: all 0.3s ease 0s;
 
     &:hover {
-      background: rgb(75 85 99);
-    }
-    &:hover {
+      box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
       color: rgb(50, 148, 248);
     }
   }
@@ -94,4 +68,31 @@ export const Content = styled.div`
     justify-content: center;
     align-items: center;
   }
+`
+
+export const ContainerIcons = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 1.875rem;
+
+  a {
+    text-decoration: none;
+    color: ${(props) => props.theme['gray-600']};
+  }
+
+  svg:hover {
+    cursor: pointer;
+    color: ${(props) => props.theme['gray-50']};
+    transition: all 0.3s ease 0s;
+  }
+
+  @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+  }
+`
+export const ReactIcons = styled.div`
+  display: flex;
+  gap: 0.75rem;
 `

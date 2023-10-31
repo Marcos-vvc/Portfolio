@@ -4,7 +4,7 @@ export const XpContainer = styled.main`
   padding: 4rem;
   display: grid;
   grid-template-columns: 35% 1fr;
-  grid-column-gap: 64px;
+  grid-column-gap: 4rem;
   line-height: 1.6;
 
   @media (max-width: 425px) {
@@ -37,5 +37,6 @@ export const Content = styled.div`
 
   p {
     margin-top: 1.5rem;
+    color: ${(props) => props.theme['gray-400']};
   }
 `

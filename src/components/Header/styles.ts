@@ -1,18 +1,7 @@
 import styled from 'styled-components'
-import Ground from '../../assets/Background.png'
 
 export const BgGround = styled.div`
   background: ${(props) => props.theme['gray-900']};
-
-  @media (max-width: 768px) {
-  }
-  @media (max-width: 425px) {
-  }
-
-  /* background-image: url(${Ground});
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat; */
 `
 export const HeaderContainer = styled.main`
   display: flex;
@@ -46,7 +35,7 @@ export const HeaderContainer = styled.main`
 
   span:active {
     transform: translateY(-1px);
-    background-color: #4b5563;
+    background-color: ${(props) => props.theme['blue-normal']};
   }
 
   img {

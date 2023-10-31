@@ -33,18 +33,14 @@ export const GlobalStyle = createGlobalStyle`
     background: ${(props) => props.theme['blue-normal']};
   }
 
-    :focus {
-        outline: 0;
-        box-shadow: 0 0 0 0.5px ${(props) => props.theme['#3294F8']};
-    }
+
 
     body {      
 
     background: ${(props) => props.theme['gray-800']};  
+    color: ${(props) => props.theme['gray-400']};
 
-      color: ${(props) => props.theme['text-color']};
-
-        -webkit-font-smoothing: antialised;
+    -webkit-font-smoothing: antialised;
     }
 
     body, input, textarea, button {
