@@ -7,7 +7,7 @@ import {
   Tag,
 } from './styles'
 import GitBlog from '../../../../assets/github.png'
-import Coffee from '../../../../assets/coffee.jpg'
+import Coffee from '../../../../assets/Coffee.png'
 import { Link } from 'react-router-dom'
 import { HiArrowNarrowRight } from 'react-icons/hi'
 import { motion } from 'framer-motion'

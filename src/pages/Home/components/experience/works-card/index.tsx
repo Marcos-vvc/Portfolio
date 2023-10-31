@@ -1,6 +1,6 @@
 import uber from '../../../../../assets/uber.png'
 import Logo from '../../../../../assets/logo.png'
-import plansul from '../../../../../assets/plansul.jpg'
+import plansul from '../../../../../assets/plansul.png'
 import { WorkContainer, Content, Imag, CardWork } from './styles'
 import { projectAnimation } from '../../../../../lib/animations'
 import { motion } from 'framer-motion'
