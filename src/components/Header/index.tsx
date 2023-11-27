@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import minhaLogo from '../../assets/logo.png'
 import { BgGround, HeaderContainer } from './styles'
 import { Intro } from '../../pages/Home/components/Intro'
+import { HiOutlineMail } from 'react-icons/hi'
 
 export function Header() {
   return (
@@ -16,8 +17,10 @@ export function Header() {
           <img src={minhaLogo} alt="eu" />
 
           <header>
-            <span>Home</span>
-            <span>Contato</span>
+            <a href="#Contact">
+              <button>Contato</button>
+            </a>
+            <HiOutlineMail />
           </header>
         </HeaderContainer>
       </motion.div>
