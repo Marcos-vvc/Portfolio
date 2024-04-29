@@ -8,6 +8,7 @@ import {
 } from './styles'
 import GitBlog from '../../../../assets/github.png'
 import Coffee from '../../../../assets/Coffee.png'
+import Landing from '../../../../assets/landing.png'
 import { Link } from 'react-router-dom'
 import { HiArrowNarrowRight } from 'react-icons/hi'
 import { motion } from 'framer-motion'
@@ -118,6 +119,49 @@ export function Projects() {
             </ProjectInfo>
           </Project>
         </Content>
+
+        <motion.div {...CardProjectAnimation}>
+          <Content>
+            <Project>
+              <Card>
+                <img src={Landing} alt="Glauber Aguiar" />
+
+                <Link to="https://glauber-page-7afu.vercel.app" target="blank">
+                  <div className="content">
+                    <h3 className="title">Glauber Aguiar</h3>
+                    <p className="sub-title">Aplicação Web</p>
+                  </div>
+                </Link>
+              </Card>
+
+              <ProjectInfo>
+                <h3>Glauber Aguiar</h3>
+
+                <p>
+                  Projeto desenvolvido para um cliente da área de Educação
+                  Física, com o objetivo de captar clientes para mentoria
+                  online.
+                </p>
+
+                <Tag>
+                  <span>Next.js</span>
+                  <span>Tailwindcss</span>
+                  <span>Shadcn/ui</span>
+                  <span>Typescript</span>
+                  <span>Lucide-react</span>
+                </Tag>
+
+                <Link
+                  to="https://github.com/Marcos-vvc/glauber-page"
+                  target="blank"
+                >
+                  Ver projeto
+                  <HiArrowNarrowRight size={20} />
+                </Link>
+              </ProjectInfo>
+            </Project>
+          </Content>
+        </motion.div>
       </motion.div>
       Se interessou?
       <Link to="https://github.com/Marcos-vvc?tab=repositories" target="blank">

@@ -13,7 +13,7 @@ export const ContainerForm = styled.div`
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    padding: 3rem;
+    padding: 1rem;
     margin-top: 3rem;
     width: 100%;
 
@@ -87,11 +87,11 @@ export const ContainerForm = styled.div`
 `
 
 export const FormContent = styled.div`
-  max-width: 32.5rem;
+  max-width: 36rem;
   width: 100%;
 
-  @media (max-width: 768px) {
-    width: 23.063rem;
+  @media (max-width: 1024px) {
+    min-width: 26rem;
   }
 `
 
